@@ -40,7 +40,7 @@ type Step = {
 
 type GameState = {
   readonly history: Step[];
-  readonly StepNumber: number;
+  readonly stepNumber: number;
 };
 
 const Board = (props: BoardProps) => {
@@ -77,12 +77,27 @@ const Game: NextPage = () => {
         xIsNext: true,
       },
     ],
-    StepNumber: 0,
+    stepNumber: 0,
   });
 
-  const current = state.history[state.StepNumber];
-
+  const current = state.history[state.stepNumber];
   const winner = calculateWinner(current.squares);
+
+  const moves = state.history.map((step, move) => {
+    const desc = move ? `Go to move #${move}` : `Go to game start`;
+    return (
+      <li key={move}>
+        <button
+          onClick={() => {
+            jumpTo(move);
+          }}
+        >
+          {desc}
+        </button>
+      </li>
+    );
+  });
+
   let status: string;
   if (winner) {
     status = `Winner: ${winner}`;
@@ -91,7 +106,7 @@ const Game: NextPage = () => {
   }
 
   const handleClick = (i: number) => {
-    if (winner) {
+    if (winner || current.squares[i]) {
       return;
     }
 
@@ -104,13 +119,20 @@ const Game: NextPage = () => {
       };
     })(current);
 
-    setState(({ history, StepNumber }) => {
-      const newHistory = history.slice(0, StepNumber + 1).concat(next);
+    setState(({ history, stepNumber }) => {
+      const newHistory = history.slice(0, stepNumber + 1).concat(next);
       return {
         history: newHistory,
-        StepNumber: newHistory.length - 1,
+        stepNumber: newHistory.length - 1,
       };
     });
+  };
+
+  const jumpTo = (move: number) => {
+    setState((prev) => ({
+      ...prev,
+      stepNumber: move,
+    }));
   };
 
   return (
@@ -122,12 +144,11 @@ const Game: NextPage = () => {
       </Head>
       <div className="game">
         <div className="game-board">
-          <div className="status">{status}</div>
           <Board squares={current.squares} onClick={handleClick} />
         </div>
         <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
+          <div>{status}</div>
+          <ol>{moves}</ol>
         </div>
       </div>
     </div>
