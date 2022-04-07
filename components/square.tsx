@@ -26,7 +26,6 @@ export const Square = (props: SquareProps) => {
         }
         console.log("val", val);
         if (validateInput(val)) {
-          // console.log("Valid");
           console.log("answer");
           console.log(props.answer);
           if (val === props.answer?.toString()) {
@@ -34,10 +33,12 @@ export const Square = (props: SquareProps) => {
             console.log(num);
             ctx.setIsDark(num - 1);
             console.log(`ctx.dark: ${ctx.dark}`);
+            e.currentTarget.disabled = true;
+            e.currentTarget.style.backgroundColor = "green";
+            e.currentTarget.style.color = "white";
           } else {
             console.log("incorrect");
             e.currentTarget.value = "";
-            e.currentTarget.style;
           }
         } else {
           //alert("Please input 1-9");
