@@ -38,20 +38,20 @@ const Test = () => {
             <input type={"number"} className="square top-board-border"></input>
             <input
               type={"number"}
-              className="square top-bord-right-block-border"
+              className="square top-board-right-block-border"
             ></input>
             <input
               type={"number"}
-              className="square top-bord-left-block-border"
+              className="square top-board-left-block-border"
             ></input>
             <input type={"number"} className="square top-board-border"></input>
             <input
               type={"number"}
-              className="square square top-bord-right-block-border"
+              className="square square top-board-right-block-border"
             ></input>
             <input
               type={"number"}
-              className="square square top-bord-left-block-border"
+              className="square square top-board-left-block-border"
             ></input>
             <input type={"number"} className="square top-board-border"></input>
             <input
@@ -81,7 +81,7 @@ const Test = () => {
           <div className="board-row">
             <input
               type={"number"}
-              className="square left-bord-bottom-block-border"
+              className="square left-board-bottom-block-border"
             ></input>
             <input type={"number"} className="square bottom-block-border"></input>
             <input
@@ -117,7 +117,7 @@ const Test = () => {
           <div className="board-row">
             <input
               type={"number"}
-              className="square left-bord-top-block-border"
+              className="square left-board-top-block-border"
             ></input>
             <input type={"number"} className="square top-block-border"></input>
             <input
@@ -165,7 +165,7 @@ const Test = () => {
           <div className="board-row">
             <input
               type={"number"}
-              className="square left-bord-bottom-block-border"
+              className="square left-board-bottom-block-border"
             ></input>
             <input type={"number"} className="square bottom-block-border"></input>
             <input
@@ -198,7 +198,7 @@ const Test = () => {
           <div className="board-row">
             <input
               type={"number"}
-              className="square left-bord-top-block-border"
+              className="square left-board-top-block-border"
             ></input>
             <input type={"number"} className="square top-block-border"></input>
             <input

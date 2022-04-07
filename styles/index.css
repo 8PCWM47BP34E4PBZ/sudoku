@@ -74,24 +74,24 @@ input[type=number] {
   border-top: 1px solid rgb(14, 239, 104);
 }
 
-.left-bord-bottom-block-border{
+.left-board-bottom-block-border{
   border: 1px solid #999;
   border-left: 3px solid rgb(239, 14, 14);
   border-bottom: 1px solid rgb(14, 239, 104);
 }
 
-.left-bord-top-block-border{
+.left-board-top-block-border{
   border: 1px solid #999;
   border-left: 3px solid rgb(239, 14, 14);
   border-top: 1px solid rgb(14, 239, 104);
 }
 
-.top-bord-right-block-border{
+.top-board-right-block-border{
   border: 1px solid #999;
   border-top: 3px solid rgb(239, 14, 14);
   border-right: 1px solid rgb(14, 239, 104);
 }
-.top-bord-left-block-border{
+.top-board-left-block-border{
   border: 1px solid #999;
   border-top: 3px solid rgb(239, 14, 14);
   border-left: 1px solid rgb(14, 239, 104);
