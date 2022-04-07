@@ -1,4 +1,4 @@
-import { themeContext, useSudoku } from "../contexts/theme";
+import { themeContext, useSudoku } from "../contexts/Sudoku";
 import { Line } from "../components/line";
 import { useEffect } from "react";
 
@@ -23,12 +23,11 @@ const Index = () => {
             残り:{ctx.remainingQuestion}問
           </div>
         </div>
-        <div className="row">
+        <div className="row  justify-content-md-center">
           <div className="col-md-6 offset-md-4">
             <br />
           </div>
         </div>
-        {/*  */}
         <Line
           id={0}
           classNames={[
@@ -91,7 +90,7 @@ const Index = () => {
             "top-block-border",
             "right-board-top-block-border",
           ]}
-          numbers={[6, 9, 1, 2, 4, 3, 5, 7, 8]}
+          numbers={[6, 9, 1, 2, undefined, 3, 5, 7, 8]}
           answers={[6, 9, 1, 2, 4, 3, 5, 7, 8]}
         />
         <Line
@@ -107,7 +106,7 @@ const Index = () => {
             "normal-border",
             "right-board-border",
           ]}
-          numbers={[2, 4, 5, 7, 8, 6, 3, 1, 9]}
+          numbers={[2, 4, undefined, 7, 8, 6, 3, 1, 9]}
           answers={[2, 4, 5, 7, 8, 6, 3, 1, 9]}
         />
         <Line
@@ -123,7 +122,7 @@ const Index = () => {
             "bottom-block-border",
             "right-board-bottom-block-border",
           ]}
-          numbers={[7, 3, 8, 9, 1, 5, 4, 6, 2]}
+          numbers={[7, 3, 8, 9, 1, 5, 4, undefined, 2]}
           answers={[7, 3, 8, 9, 1, 5, 4, 6, 2]}
         />
         <Line
@@ -139,7 +138,7 @@ const Index = () => {
             "top-block-border",
             "right-board-top-block-border",
           ]}
-          numbers={[5, 7, 4, 1, 3, 2, 8, 9, 6]}
+          numbers={[5, undefined, 4, 1, 3, 2, 8, 9, 6]}
           answers={[5, 7, 4, 1, 3, 2, 8, 9, 6]}
         />
         <Line
@@ -155,7 +154,7 @@ const Index = () => {
             "normal-border",
             "right-board-border",
           ]}
-          numbers={[1, 2, 6, 8, 9, 4, 7, 3, 5]}
+          numbers={[1, 2, 6, undefined, 9, 4, 7, 3, 5]}
           answers={[1, 2, 6, 8, 9, 4, 7, 3, 5]}
         />
         <Line
@@ -171,7 +170,7 @@ const Index = () => {
             "bottom-board-border",
             "bottom-right-board-border",
           ]}
-          numbers={[3, 8, 9, 6, 5, 7, 2, 4, 1]}
+          numbers={[3, 8, undefined, 6, 5, 7, 2, 4, 1]}
           answers={[3, 8, 9, 6, 5, 7, 2, 4, 1]}
         />
       </div>

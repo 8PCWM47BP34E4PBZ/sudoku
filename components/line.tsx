@@ -39,8 +39,8 @@ type LineProps = {
 
 export const Line = (props: LineProps) => {
   return (
-    <div className="row">
-      <div className="col-md-6 offset-md-4">
+    <div className="row justify-content-md-center">
+      <div className="col-md-6 offset-md-3">
         <div className="board-row">
           <Square
             answer={props.answers[0]}

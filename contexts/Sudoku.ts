@@ -8,7 +8,7 @@ type SudokuContext = {
 
 // context default value
 const defaultContext: SudokuContext = {
-  remainingQuestion: 3,
+  remainingQuestion: 9,
   setRemainingQuestion: () => { },
 };
 
