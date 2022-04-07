@@ -32,30 +32,31 @@ const Test = () => {
         <div className="col-md-6 offset-md-4">
           <div className="board-row">
             <input
-              type={"number"}
+              type={"text"}
               className="square top-left-board-border"
+              maxLength={1}
             ></input>
-            <input type={"number"} className="square top-board-border"></input>
+            <input type={"text"} className="square top-board-border"></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square top-board-right-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square top-board-left-block-border"
             ></input>
-            <input type={"number"} className="square top-board-border"></input>
+            <input type={"text"} className="square top-board-border"></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square square top-board-right-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square square top-board-left-block-border"
             ></input>
-            <input type={"number"} className="square top-board-border"></input>
+            <input type={"text"} className="square top-board-border"></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square top-right-board-border"
             ></input>
           </div>
@@ -64,15 +65,24 @@ const Test = () => {
       <div className="row">
         <div className="col-md-6 offset-md-4">
           <div className="board-row">
-            <input type={"number"} className="square left-board-border"></input>
-            <input type={"number"} className="square normal-border"></input>
-            <input type={"number"} className="square right-block-border"></input>
-            <input type={"number"} className="square left-block-border"></input>
-            <input type={"number"} className="square normal-border"></input>
-            <input type={"number"} className="square right-block-border"></input>
-            <input type={"number"} className="square left-block-border"></input>
-            <input type={"number"} className="square normal-border"></input>
-            <input type={"number"} className="square right-board-border"></input>
+            <input type={"text"} className="square left-board-border"></input>
+            <input type={"text"} className="square normal-border"></input>
+            <input
+              type={"text"}
+              className="square right-block-border"
+            ></input>
+            <input type={"text"} className="square left-block-border"></input>
+            <input type={"text"} className="square normal-border"></input>
+            <input
+              type={"text"}
+              className="square right-block-border"
+            ></input>
+            <input type={"text"} className="square left-block-border"></input>
+            <input type={"text"} className="square normal-border"></input>
+            <input
+              type={"text"}
+              className="square right-board-border"
+            ></input>
           </div>
         </div>
       </div>
@@ -80,33 +90,39 @@ const Test = () => {
         <div className="col-md-6 offset-md-4">
           <div className="board-row">
             <input
-              type={"number"}
+              type={"text"}
               className="square left-board-bottom-block-border"
             ></input>
-            <input type={"number"} className="square bottom-block-border"></input>
             <input
-              type={"number"}
+              type={"text"}
+              className="square bottom-block-border"
+            ></input>
+            <input
+              type={"text"}
               className="square bottom-right-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square bottom-left-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square  bottom-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square bottom-right-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square bottom-left-block-border"
             ></input>
-            <input type={"number"} className="square bottom-block-border"></input>
             <input
-              type={"number"}
+              type={"text"}
+              className="square bottom-block-border"
+            ></input>
+            <input
+              type={"text"}
               className="square right-board-bottom-block-border"
             ></input>
           </div>
@@ -116,30 +132,30 @@ const Test = () => {
         <div className="col-md-6 offset-md-4">
           <div className="board-row">
             <input
-              type={"number"}
+              type={"text"}
               className="square left-board-top-block-border"
             ></input>
-            <input type={"number"} className="square top-block-border"></input>
+            <input type={"text"} className="square top-block-border"></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square top-right-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square top-left-block-border"
             ></input>
-            <input type={"number"} className="square top-block-border"></input>
+            <input type={"text"} className="square top-block-border"></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square top-right-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square top-left-block-border"
             ></input>
-            <input type={"number"} className="square top-block-border"></input>
+            <input type={"text"} className="square top-block-border"></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square right-board-top-block-border"
             ></input>
           </div>
@@ -148,15 +164,24 @@ const Test = () => {
       <div className="row">
         <div className="col-md-6 offset-md-4">
           <div className="board-row">
-            <input type={"number"} className="square left-board-border"></input>
-            <input type={"number"} className="square normal-border"></input>
-            <input type={"number"} className="square right-block-border"></input>
-            <input type={"number"} className="square left-block-border"></input>
-            <input type={"number"} className="square normal-border"></input>
-            <input type={"number"} className="square right-block-border"></input>
-            <input type={"number"} className="square left-block-border"></input>
-            <input type={"number"} className="square normal-border"></input>
-            <input type={"number"} className="square right-board-border"></input>
+            <input type={"text"} className="square left-board-border"></input>
+            <input type={"text"} className="square normal-border"></input>
+            <input
+              type={"text"}
+              className="square right-block-border"
+            ></input>
+            <input type={"text"} className="square left-block-border"></input>
+            <input type={"text"} className="square normal-border"></input>
+            <input
+              type={"text"}
+              className="square right-block-border"
+            ></input>
+            <input type={"text"} className="square left-block-border"></input>
+            <input type={"text"} className="square normal-border"></input>
+            <input
+              type={"text"}
+              className="square right-board-border"
+            ></input>
           </div>
         </div>
       </div>
@@ -164,30 +189,39 @@ const Test = () => {
         <div className="col-md-6 offset-md-4">
           <div className="board-row">
             <input
-              type={"number"}
+              type={"text"}
               className="square left-board-bottom-block-border"
             ></input>
-            <input type={"number"} className="square bottom-block-border"></input>
             <input
-              type={"number"}
+              type={"text"}
+              className="square bottom-block-border"
+            ></input>
+            <input
+              type={"text"}
               className="square bottom-right-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square bottom-left-block-border"
             ></input>
-            <input type={"number"} className="square bottom-block-border"></input>
             <input
-              type={"number"}
+              type={"text"}
+              className="square bottom-block-border"
+            ></input>
+            <input
+              type={"text"}
               className="square bottom-right-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square bottom-left-block-border"
             ></input>
-            <input type={"number"} className="square bottom-block-border"></input>
             <input
-              type={"number"}
+              type={"text"}
+              className="square bottom-block-border"
+            ></input>
+            <input
+              type={"text"}
               className="square right-board-bottom-block-border"
             ></input>
           </div>
@@ -197,30 +231,30 @@ const Test = () => {
         <div className="col-md-6 offset-md-4">
           <div className="board-row">
             <input
-              type={"number"}
+              type={"text"}
               className="square left-board-top-block-border"
             ></input>
-            <input type={"number"} className="square top-block-border"></input>
+            <input type={"text"} className="square top-block-border"></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square top-right-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square top-left-block-border"
             ></input>
-            <input type={"number"} className="square top-block-border"></input>
+            <input type={"text"} className="square top-block-border"></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square top-right-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square top-left-block-border"
             ></input>
-            <input type={"number"} className="square top-block-border"></input>
+            <input type={"text"} className="square top-block-border"></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square right-board-top-block-border"
             ></input>
           </div>
@@ -229,15 +263,24 @@ const Test = () => {
       <div className="row">
         <div className="col-md-6 offset-md-4">
           <div className="board-row">
-            <input type={"number"} className="square left-board-border"></input>
-            <input type={"number"} className="square normal-border"></input>
-            <input type={"number"} className="square right-block-border"></input>
-            <input type={"number"} className="square left-block-border"></input>
-            <input type={"number"} className="square normal-border"></input>
-            <input type={"number"} className="square right-block-border"></input>
-            <input type={"number"} className="square left-block-border"></input>
-            <input type={"number"} className="square normal-border"></input>
-            <input type={"number"} className="square right-board-border"></input>
+            <input type={"text"} className="square left-board-border"></input>
+            <input type={"text"} className="square normal-border"></input>
+            <input
+              type={"text"}
+              className="square right-block-border"
+            ></input>
+            <input type={"text"} className="square left-block-border"></input>
+            <input type={"text"} className="square normal-border"></input>
+            <input
+              type={"text"}
+              className="square right-block-border"
+            ></input>
+            <input type={"text"} className="square left-block-border"></input>
+            <input type={"text"} className="square normal-border"></input>
+            <input
+              type={"text"}
+              className="square right-board-border"
+            ></input>
           </div>
         </div>
       </div>
@@ -245,30 +288,39 @@ const Test = () => {
         <div className="col-md-6 offset-md-4">
           <div className="board-row">
             <input
-              type={"number"}
+              type={"text"}
               className="square bottom-left-board-border"
             ></input>
-            <input type={"number"} className="square bottom-board-border"></input>
             <input
-              type={"number"}
+              type={"text"}
+              className="square bottom-board-border"
+            ></input>
+            <input
+              type={"text"}
               className="square bottom-board-right-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square bottom-board-left-block-border"
             ></input>
-            <input type={"number"} className="square bottom-board-border"></input>
             <input
-              type={"number"}
+              type={"text"}
+              className="square bottom-board-border"
+            ></input>
+            <input
+              type={"text"}
               className="square bottom-board-right-block-border"
             ></input>
             <input
-              type={"number"}
+              type={"text"}
               className="square bottom-board-left-block-border"
             ></input>
-            <input type={"number"} className="square bottom-board-border"></input>
             <input
-              type={"number"}
+              type={"text"}
+              className="square bottom-board-border"
+            ></input>
+            <input
+              type={"text"}
               className="square bottom-right-board-border"
             ></input>
           </div>
