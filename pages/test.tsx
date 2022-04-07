@@ -1,6 +1,3 @@
-import { Box } from "../components/box";
-import { themeContext, useDark } from "../contexts/theme";
-
 const Test = () => {
   return (
     <div className="container">

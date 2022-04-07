@@ -1,28 +1,28 @@
 import { createContext, useCallback, useState } from 'react';
 
 // set context type
-type ThemeContext = {
-  dark: number;
-  setIsDark: (isDark: number) => void;
+type SudokuContext = {
+  remainingQuestion: number;
+  setRemainingQuestion: (isDark: number) => void;
 };
 
 // context default value
-const defaultContext: ThemeContext = {
-  dark: 3,
-  setIsDark: () => { },
+const defaultContext: SudokuContext = {
+  remainingQuestion: 3,
+  setRemainingQuestion: () => { },
 };
 
 // context object
-export const themeContext = createContext<ThemeContext>(defaultContext);
+export const themeContext = createContext<SudokuContext>(defaultContext);
 
 // custom Hook
-export const useDark = (): ThemeContext => {
-  const [dark, setDark] = useState(defaultContext.dark);
-  const setIsDark = useCallback((current: number): void => {
-    setDark(current);
+export const useSudoku = (): SudokuContext => {
+  const [remainingQuestion, setRemainingQuestion] = useState(defaultContext.remainingQuestion);
+  const setQuestion = useCallback((current: number): void => {
+    setRemainingQuestion(current);
   }, []);
   return {
-    dark,
-    setIsDark,
+    remainingQuestion: remainingQuestion,
+    setRemainingQuestion: setQuestion,
   };
 };

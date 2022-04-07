@@ -9,15 +9,21 @@ const validateInput = (val: string) => {
 type SquareProps = {
   number?: number;
   answer: number;
+  cName: string;
 };
 
 export const Square = (props: SquareProps) => {
   const ctx = useContext(themeContext);
+  let style = {};
+  if (!props.number) {
+    style = { backgroundColor: "rgba(255,0,0,0.5)" };
+  }
 
   return (
     <input
       type={"text"}
-      className="square"
+      style={style}
+      className={`square ${props.cName}`}
       maxLength={1}
       onInput={(e) => {
         const val = e.currentTarget.value;
@@ -29,20 +35,20 @@ export const Square = (props: SquareProps) => {
           console.log("answer");
           console.log(props.answer);
           if (val === props.answer?.toString()) {
-            const num = ctx.dark;
+            const num = ctx.remainingQuestion;
             console.log(num);
-            ctx.setIsDark(num - 1);
-            console.log(`ctx.dark: ${ctx.dark}`);
+            ctx.setRemainingQuestion(num - 1);
+            console.log(`ctx.dark: ${ctx.remainingQuestion}`);
             e.currentTarget.disabled = true;
             e.currentTarget.style.backgroundColor = "green";
             e.currentTarget.style.color = "white";
           } else {
             console.log("incorrect");
+            alert("間違っています");
             e.currentTarget.value = "";
           }
         } else {
-          //alert("Please input 1-9");
-          console.error("Invalid!!!");
+          alert("1-9の数字を入力してください");
           e.currentTarget.value = "";
         }
       }}
