@@ -8,7 +8,12 @@ const Index = () => {
     // Update the document title using the browser API
     document.title = `残り： ${ctx.remainingQuestion} 問`;
     if (ctx.remainingQuestion === 0) {
-      alert("終了");
+      alert(`終了 経過時間:${ctx.time}秒`);
+    } else {
+      const id = setInterval(() => {
+        ctx.setTime(ctx.time + 1);
+      }, 1000);
+      return () => clearInterval(id);
     }
   });
   return (
@@ -21,6 +26,12 @@ const Index = () => {
             style={{ color: "red", backgroundColor: "green" }}
           >
             残り:{ctx.remainingQuestion}問
+          </div>
+          <div
+            className="col-md-auto"
+            style={{ color: "red", backgroundColor: "green" }}
+          >
+            経過時間:{ctx.time}秒
           </div>
         </div>
         <div className="row  justify-content-md-center">

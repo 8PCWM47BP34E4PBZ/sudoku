@@ -4,12 +4,16 @@ import { createContext, useCallback, useState } from 'react';
 type SudokuContext = {
   remainingQuestion: number;
   setRemainingQuestion: (isDark: number) => void;
+  time: number;
+  setTime: (time: number) => void;
 };
 
 // context default value
 const defaultContext: SudokuContext = {
   remainingQuestion: 9,
   setRemainingQuestion: () => { },
+  time: 0,
+  setTime: () => { },
 };
 
 // context object
@@ -21,8 +25,14 @@ export const useSudoku = (): SudokuContext => {
   const setQuestion = useCallback((current: number): void => {
     setRemainingQuestion(current);
   }, []);
+  const [time, setT] = useState(defaultContext.time);
+  const setTime = useCallback((time: number): void => {
+    setT(time);
+  }, []);
   return {
     remainingQuestion: remainingQuestion,
     setRemainingQuestion: setQuestion,
+    time:time,
+    setTime: setTime,
   };
 };

@@ -48,7 +48,7 @@ export const Square = (props: SquareProps) => {
             e.currentTarget.value = "";
           }
         } else {
-          alert("1-9の数字を入力してください");
+          alert("1-9の半角数字を入力してください");
           e.currentTarget.value = "";
         }
       }}
